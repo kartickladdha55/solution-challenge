@@ -1,0 +1,43 @@
+{
+  "needsByCategory": [
+    { "name": "Food", "value": 15 },
+    { "name": "Medical", "value": 12 },
+    { "name": "Education", "value": 10 },
+    { "name": "Elder Care", "value": 8 },
+    { "name": "Infrastructure", "value": 7 },
+    { "name": "Mental Health", "value": 6 },
+    { "name": "Child Care", "value": 5 },
+    { "name": "Shelter", "value": 4 }
+  ],
+  "needsOverTime": [
+    { "week": "Week 1", "reported": 10, "resolved": 5 },
+    { "week": "Week 2", "reported": 15, "resolved": 8 },
+    { "week": "Week 3", "reported": 12, "resolved": 10 },
+    { "week": "Week 4", "reported": 20, "resolved": 12 },
+    { "week": "Week 5", "reported": 18, "resolved": 15 },
+    { "week": "Week 6", "reported": 25, "resolved": 18 },
+    { "week": "Week 7", "reported": 22, "resolved": 20 },
+    { "week": "Week 8", "reported": 30, "resolved": 22 }
+  ],
+  "volunteerSkills": [
+    { "name": "Medical", "value": 10 },
+    { "name": "Education", "value": 8 },
+    { "name": "Food", "value": 12 },
+    { "name": "Logistics", "value": 15 },
+    { "name": "Elder Care", "value": 6 },
+    { "name": "Counseling", "value": 5 }
+  ],
+  "mostAffectedDistricts": [
+    { "name": "Riverside", "count": 12 },
+    { "name": "North Ward", "count": 10 },
+    { "name": "West Side", "count": 8 },
+    { "name": "Old Town", "count": 7 },
+    { "name": "Market District", "count": 6 }
+  ],
+  "kpis": {
+    "needsReportedThisMonth": 124,
+    "matchRate": 78,
+    "avgTimeToMatch": "2.4 days",
+    "volunteersActive": 45
+  }
+}

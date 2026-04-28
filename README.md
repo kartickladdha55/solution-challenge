@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SmartResource: Data-Driven Volunteer Coordination Platform
 
-## Getting Started
+SmartResource is a Next.js-based social impact platform designed to centralize scattered community needs data and intelligently match them with available volunteers. It provides a real-time dashboard for coordinators to monitor urgency hotspots and optimize resource allocation.
 
-First, run the development server:
+## 🌟 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Command Dashboard:** High-level overview of community needs, volunteer capacity, and recent activity.
+- **District Urgency Heatmap:** Visualized SVG map showing real-time urgency levels across different city districts.
+- **Smart Matching Engine:** Algorithmic volunteer-to-task matching based on skill overlap, proximity, and availability.
+- **Needs Registry:** Centralized database for reporting and tracking community needs (Food, Medical, Education, etc.).
+- **Volunteer Roster:** Comprehensive list of registered volunteers with skill tracking and assignment history.
+- **Impact Analytics:** Visualized data insights using Recharts to identify coverage gaps and operational trends.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Framework:** Next.js 14+ (App Router)
+- **Styling:** Tailwind CSS (v4)
+- **Icons:** Lucide React
+- **Charts:** Recharts
+- **State Management:** React Context API
+- **Fonts:** Google Fonts (Fraunces & DM Sans)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+This project is a standalone prototype and does not require a backend, database, or API keys.
 
-To learn more about Next.js, take a look at the following resources:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Open the application:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/app`: Application pages and layout.
+- `/components`: Reusable UI components (Sidebar, StatCard, DistrictMap, etc.).
+- `/context`: Global state management via `AppContext`.
+- `/data`: Mock JSON data for needs, volunteers, matches, and analytics.
+- `/lib`: Utility functions and matching algorithm logic.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Matching Algorithm
+
+The platform uses a weighted scoring system to recommend candidates:
+- **Skill Match (+40 pts):** If volunteer has a skill matching the need's category.
+- **Proximity (+30 pts):** If volunteer is in the same district.
+- **Proximity (+15 pts):** If volunteer is in an adjacent district.
+- **Availability (+30 pts):** If volunteer is currently "Available".
+
+## 📄 License
+
+This project is open-source and developed for social impact initiatives.
